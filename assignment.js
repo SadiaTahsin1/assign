@@ -1,15 +1,27 @@
+// https://github.com/SadiaTahsin1/assign
+
 //no.1
-function kilometerToMeter(num){
-    var result = num * 1000;
-    return result;
+function kilometerToMeter(kilo){
+    if(kilo<0)
+        {return "Invalid input"}
+    else{
+        var meter = kilo * 1000;
+        return meter;
+    }
+    
 }
+console.log(kilometerToMeter(-8));
 
 //no.2
 function budgetCalculator(clock,phone,laptop){
+    if(clock<0 || phone<0 || laptop<0)
+    {return "Invalid input."}
+    else{
     total=clock*50 + phone*100 + laptop*500;
     return total;
+    }
 }
-
+console.log(budgetCalculator(1,2,1));
 //no.3
 function hotelCost(day){
     var cost=0;
@@ -26,13 +38,13 @@ function hotelCost(day){
         cost=10*100 + 10*80 + (day-20)*50;
         return cost;
     }
-    else {console.log("invalid");}
+    else {return "invalid"}
 }
-
+console.log(hotelCost(25));
 //no.4
 function megaFriend(arr){
     var longest = '';
-    if(arr.length==0){console.log("Empty array.");}
+    if(arr.length==0){return "Empty array."}
     else
     {
         for(var i=0; i<arr.length; i++){
@@ -42,3 +54,5 @@ function megaFriend(arr){
     return longest;
     }
 }
+arr=[];
+console.log(megaFriend(arr));
