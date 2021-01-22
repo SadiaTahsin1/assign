@@ -10,7 +10,7 @@ function kilometerToMeter(kilo){
     }
     
 }
-console.log(kilometerToMeter(-8));
+
 
 //no.2
 function budgetCalculator(clock,phone,laptop){
@@ -21,7 +21,7 @@ function budgetCalculator(clock,phone,laptop){
     return total;
     }
 }
-console.log(budgetCalculator(1,2,1));
+
 //no.3
 function hotelCost(day){
     var cost=0;
@@ -40,7 +40,7 @@ function hotelCost(day){
     }
     else {return "invalid"}
 }
-console.log(hotelCost(25));
+
 //no.4
 function megaFriend(arr){
     var longest = '';
@@ -54,5 +54,3 @@ function megaFriend(arr){
     return longest;
     }
 }
-arr=[];
-console.log(megaFriend(arr));
